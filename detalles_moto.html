@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+      FILEPATH: /c:/Users/Estudiantes/Documents/pgmWEB/final de semestre/detalles_moto.html
+      Este archivo HTML contiene las metaetiquetas y enlaces necesarios a archivos CSS externos para el estilo.
+      También establece el título de la página en "Xtrex-Información".
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="eslido-pagina-principal.css">
+    <title>XTREX-informacion</title>
+</head>
+<body>
+    <!-- 
+      Este código incluye dos etiquetas de script.
+      La primera etiqueta de script importa la biblioteca Bootstrap JavaScript desde una CDN (red de entrega de contenido).
+      La segunda etiqueta de script importa un archivo JavaScript local llamado "Script-Tiende.js".
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script-tienda.js"></script>
+    <!-- FILEPATH: /c:/Users/Estudiantes/Documents/pgmWEB/final de semestre/detalles_moto.html -->
+    <!--
+      Este código representa la sección del encabezado del archivo "Detalles_moto.html".
+      Incluye un logotipo, un menú de navegación y un enlace para volver a la página "Tienda xtrex.html".
+    -->
+    <header class="d-flex justify-content-end">
+      <h1 class="position-absolute border-end p-3 m-2">XTREX</h1>
+      <nav>
+        <ul class="nav p-1 m-1" id="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tienda XTREX.html">VOLVER</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <!-- 
+          Este código HTML representa una sección de una página web que muestra detalles de una motocicleta.
+          Incluye elementos como un contenedor de imagen, nombre del modelo, color, espejos, parabrisas, 
+          botones para agregar al carrito y pagar, una etiqueta para productos seleccionados, un select desplegable 
+          para productos seleccionados y un botón para eliminar del carrito.
+        -->
+        <div class="row">
+            <div class="col-md-3 float-left">
+                <div id="contenedorImagen">
+                    <!-- Aquí se mostrará la imagen seleccionada -->
+                    <h3 class=" text-superimposed position-absolute text-white texto_modelo text-sh fw-bold">XTREX modelo</h3> <h3 class="text-superimposed position-absolute text-white texto_modelo fw-bold" id="modelo">asd</h3>
+                </div>
+            </div>
+        </div>
+      <div class="container d-block p-2">
+        <h3 id="colori" class="position-absolute">Color: </h3><h3 id="color" class="position-absolute"></h3>
+        <h3 id="espejosi" class="position-absolute">Espejos: </h3><h3 id="espejos" class="position-absolute"></h3>
+        <h3 id="parabrisai" class="position-absolute">Parabrisa: </h3><h3 id="parabrisas" class="position-absolute"></h3>
+
+        <button class="btn-accion bg-primary" id="agregar_al_carrito">AGREGAR AL CARRITO</button>
+        <button class="btn-accion bg-secondary"><a href="pagar produccro.html" class="text-decoration-none text-light" id="pagarAhora" onclick="transferirOpciones()">PAGAR AHORA</a></button>
+        <label id="productos_label">PRODUCTOS SELECCIONADOS</label>
+        <select id="productos_seleccionados"></select>
+        <button class="btn-eliminar bg-secondary" id="eliminar_del_carrito">X</button>
+    </div>
+    <br>
+    <div class="container">
+      <h1 class="text-bg-info text-center border rounded" id="recomendados">RECOMENDADOS</h1>
+    </div>
+    <div class="d-flex p-5 ms-5 w-100">
+      <div class="container d-block position-relative" id="recomendado1">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card-deck">
+              <div class="card mb-4">
+                <img src="src/motos/_49487bac-4a5b-4bc7-a3b4-1a421a415542.jfif" class="card-img-top" alt="Imagen de la moto 1">
+                <div class="card-body">
+                  <h5 class="card-title">CYBERPUNK</h5>
+                  <p class="card-text">XTREX modelo cyberpunk</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_49487bac-4a5b-4bc7-a3b4-1a421a415542.jfif','CYBERPUNK','azul','si','no')" href="#" class="btn btn-primary ms-5">ver informacion</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="src/motos/_627761fb-2649-4ea8-8d8d-141801b61c7f.jfif" class="card-img-top" alt="XTREX modelo ZC">
+                <div class="card-body">
+                  <h5 class="card-title">ZC</h5>
+                  <p class="card-text">XTREX modelo zc</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_627761fb-2649-4ea8-8d8d-141801b61c7f.jfif','ZC','roja','no','no')" href="#" class="btn btn-primary ms-5">ver informacion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-block position-relative" id="recomendado2">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card-deck">
+              <div class="card mb-4">
+                <img src="src/motos/_994bae41-6fa9-4810-bb9f-58afad8ce1bf.jfif" class="card-img-top" alt=" XTREX modelo XEX">
+                <div class="card-body">
+                  <h5 class="card-title">XEX</h5>
+                  <p class="card-text">XTREX modelo xex</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_994bae41-6fa9-4810-bb9f-58afad8ce1bf.jfif','XEX','negro','si','no')" href="#" class="btn btn-primary">ver informacion</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="src/motos/_f2ab3725-de48-4dc9-a116-ad80591548a8.jfif" class="card-img-top" alt="XTREX modelo XTrex">
+                <div class="card-body">
+                  <h5 class="card-title">XTrex</h5>
+                  <p class="card-text">XTREX modelo XTrex</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_f2ab3725-de48-4dc9-a116-ad80591548a8.jfif','XTrex','rojo','si','si')" href="#" class="btn btn-primary ms-5">ver informacion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-block position-relative" id="recomendado3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card-deck">
+              <div class="card mb-4">
+                <img src="src/motos/_36df6d63-e3a4-4a7b-b072-60166818e100.jfif" class="card-img-top" alt="XTREX modelo zt">
+                <div class="card-body">
+                  <h5 class="card-title">ZT</h5>
+                  <p class="card-text">XTREX modelo zt</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_36df6d63-e3a4-4a7b-b072-60166818e100.jfif','ZT','blanco','si','si')" href="#" class="btn btn-primary ms-5">ver informacion</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="src/motos/_bdd5fdf4-e417-4778-8c6e-f3aaa14b4497.jfif" class="card-img-top" alt="RACING X2">
+                <div class="card-body">
+                  <h5 class="card-title">RACING X2</h5>
+                  <p class="card-text">XTREX modelo racing x2</p>
+                  <a onclick="abrir_detalles_moto('src/motos/_bdd5fdf4-e417-4778-8c6e-f3aaa14b4497.jfif','RACING X2','rojo','si','si')" class="btn btn-primary ms-5">ver informacion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </main>
+    <!-- Pie de Página (<footer>):
+
+      Información de la Marca (<div class="col">):
+      Incluye el título "XTREX".
+      Proporciona una breve descripción de la tienda ficticia XTREX.
+      Información de Contacto (<div class="col m-2">):
+      Muestra información sobre la tienda de motos ficticia XTREX.
+      Redes Sociales (<div class="col">):
+      Muestra íconos de redes sociales con enlaces a WhatsApp, YouTube y Facebook.
+      Utiliza imágenes para los íconos y enlaces externos para cada red social. -->
+    <footer class="p-0 w-100 fw-bold h-100">
+      <div class="row">
+        <div class="col">
+          <h1 class="m-4">XTREX</h1>
+          <p>&copy; JUAN ESTEBAN ORTIZ GUARY | XTREX | TIENDA Y MARCA FINCTICIA</p>
+        </div>
+        <div class="col m-2">
+          <p class="m-5">TIENDA DE MOTOS DE LA MARCA FINCTICIA-XTREX-</p>
+        </div>
+        <div class="col">
+          <p class="m-5">contatos:</p>
+          <div class="container-fluid d-flex">
+  
+          </div>
+          <a href="https://web.whatsapp.com/"><img src="src/whatsapp-removebg-preview.png" class="iconos"></a>
+          <a href="https://www.youtube.com/"><img src="src/images-removebg-preview (1).png" class="iconos"></a>
+          <a href="https://www.facebook.com/"><img src="src/4e5d6eb79c88fd031051c1f28b077b32-removebg-preview.png" class="iconos"></a>
+          
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

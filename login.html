@@ -1,0 +1,60 @@
+<!-- sistema de login
+este modulo implementa la interfaz de un inicio de secion(login) para una pagina de ventas de motos de tipo de cross
+autor: Juan Esteban Ortiz Guary
+ultima modificacion: 28/11/2023 -->
+<!--martes 28/11/2023
+cambiare el estilo propio por usar bootstrap
+porque: para ahorrar tiempo en lo que es mi diseño base del login-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- "invocamos" a la hoja de estilo para la pagina de ventas de motos de cross -->
+    <link  rel="stylesheet" href="estilo-login.css">
+    <!--llamamos a la libreria de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>XTREX</title>
+</head>
+<!--
+  Este es un formulario de inicio de sesión que permite a los usuarios crear una cuenta.
+  Incluye campos para nombre, correo electrónico, dirección, contraseña y confirmación de contraseña.
+  El formulario se envía utilizando el método post.
+  El formulario también incluye un botón para crear la cuenta y llama a la función "EnviarCorReo ()" cuando se hace clic.
+-->
+<body>
+    <script src="script-login.js"></script>
+    <!-- el contenedor para el formulario para poder colocarlo en le centro -->
+    <div class="container">
+        <!-- un label para mostar que un formulario para crear una cuenta -->
+        <h1 class="mb-12 text-center text-warning mt-5 w-50 border-bottom position-relative">INICIAR SECION</h1>
+
+        <form action="" method="post" class="border rounded w-50 position-relative" id="form">
+          <div class="mb-3 text-warning">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="mb-3 text-warning">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+          <div class="mb-3 text-warning">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" required>
+          </div>
+          <div class="mb-3 text-warning">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+          </div>
+          <div class="mb-3 text-warning">
+            <label for="confirmar_contrasena" class="form-label">Confirmar contraseña</label>
+            <input type="password" class="form-control" id="confirmar_contrasena" name="confirmar_contrasena" required>
+          </div>
+          <div class="mb-12 d-flex justify-content-center align-items-center p-2">
+            <button type="submit" class="btn btn-primary w-50 m-1" onclick="enviarCorreo()" id="btn">CREAR CUENTA</button>
+            <a href="tienda XTREX.html" class="btn btn-secondary w-50 m-1">ATRAS</a>
+          </div>
+        </form>
+</body>
+</html>

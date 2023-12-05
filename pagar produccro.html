@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Este código incluye dos hojas de estilo CSS.
+        La primera hoja de estilo es de la biblioteca Bootstrap, que se carga desde un CDN.
+        La segunda hoja de estilo es un archivo CSS personalizado llamado "Eslido-Pagina-PRICIPAL.CSS".
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="eslido-pagina-principal.css">
+    <title>XTREX-pago</title>
+</head>
+<body onload="mostrarOpciones()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script-tienda.js"></script>
+    <!--
+        Este código representa la sección de encabezado de una página web.
+        Incluye un logotipo, un menú de navegación y un enlace para volver a la página anterior.
+    -->
+    <header class="d-flex justify-content-end">
+        <h1 class="position-absolute border-end p-3 m-2">XTREX</h1>
+        <nav>
+            <ul class="nav p-1 m-1" id="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="tienda XTREX.html">VOLVER</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 
+        Este código HTML representa un formulario para cancelar una compra.
+        Contiene campos para ingresar la dirección de envío, el código postal y el número de tarjeta.
+        Al hacer clic en el botón "Cancelar Compra", se enviará el formulario.
+    -->
+    <main>
+        <!-- Formulario para cancelar la compra -->
+        <div id="formularioCancelarCompra" class="container border border-3 rounded-3 border-danger">
+            <!-- Sección para mostrar productos en el carrito -->
+            <div id="carrito" class="container mt-4">
+                <h2>PAGAR CARRITO</h2>
+            </div>
+            <br>
+            <form>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                </div>
+                <div class="mb-3">
+                    <label for="codigoPostal" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tarjeta" class="form-label">Número de Tarjeta</label>
+                    <input type="text" class="form-control" id="tarjeta" name="tarjeta" required>
+                </div>
+                <button type="submit" class="btn btn-danger" onclick="compra_cancelada()">Cancelar Compra</button>
+            </form>
+        </div>
+    </main>
+    <!--
+            Esta es la sección de pie de página de la página web.
+            Contiene información sobre la marca y los datos de contacto.
+    -->
+    <footer class="p-0 w-100 fw-bold h-100">
+        <div class="row">
+            <div class="col">
+                <h1 class="m-4">XTREX</h1>
+                <p>&copy; JUAN ESTEBAN ORTIZ GUARY | XTREX | TIENDA Y MARCA FINCTICIA</p>
+            </div>
+            <div class="col m-2">
+                <p class="m-5">TIENDA DE MOTOS DE LA MARCA FINCTICIA-XTREX-</p>
+            </div>
+            <div class="col">
+                <p class="m-5">contatos:</p>
+                <div class="container-fluid d-flex">
+
+                </div>
+                <a href="https://web.whatsapp.com/"><img src="src/whatsapp-removebg-preview.png" class="iconos"></a>
+                <a href="https://www.youtube.com/"><img src="src/images-removebg-preview (1).png" class="iconos"></a>
+                <a href="https://www.facebook.com/"><img src="src/4e5d6eb79c88fd031051c1f28b077b32-removebg-preview.png" class="iconos"></a>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

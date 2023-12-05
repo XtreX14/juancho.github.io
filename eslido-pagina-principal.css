@@ -1,0 +1,158 @@
+/**
+Este archivo CSS contiene estilos para la página principal del sitio web "Eslido".
+Incluye estilos para el cuerpo, el encabezado, el pie de página, las imágenes, el texto, los botones y la navegación.
+Los estilos definen el diseño, los colores, el posicionamiento, las transiciones y otras propiedades visuales de los elementos.
+ */
+body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+h1{
+    left: 10px;
+}
+.cartas img{
+    position: absolute;
+    width: 35%; 
+    height: 100%;
+    transition: all 0.5s;
+}
+.texo_informacion{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    color: white;
+    display: none;
+}
+.cartas img:hover{
+    border-radius: 5px !important;
+    width: 100%; 
+    height: 100%;
+    
+}
+#modelo{
+    left: 15%;
+    top: 62%;
+}
+#color{
+    top: 45%;
+    left: 53%;
+}
+#espejos{
+    top: 25%;
+    left: 53%;
+}
+#parabrisas{
+    top: 35%;
+    left: 53%;
+}
+#colori{
+    top: 45%;
+    left: 38%;
+}
+#espejosi{
+    top: 25%;
+    left: 38%;
+}
+#parabrisai{
+    top: 35%;
+    left: 38%;
+}
+.texto_modelo{
+    text-shadow: 3px 2px 5px #0400ff;
+    top: 58%;
+    left: 3%;
+}
+button{
+    background-color: gray;
+}
+#recomendado1{
+    left: 20%;
+}
+#recomendado2{
+    left: 6%;
+}
+#recomendado3{
+    left: -8%;
+}
+#recomendados{
+    text-shadow: 2px 2px 5px #0400ff;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-accion{
+    position: relative;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+    left: 30%;
+}
+canvas {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+#productos_label{
+    position: absolute;
+    padding: 3px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    left: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0099ff;
+    text-shadow: 2px 2px 5px #000000;
+}
+#productos_seleccionados{
+    position: relative;
+    border-radius: 5px;
+    width: 20%;
+    left: 32.5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0099ff;
+    text-shadow: 2px 2px 5px #000000;
+}
+#eliminar_del_carrito{
+    position: relative;
+    border-radius: 5px;
+    width: 3%;
+    left: 32.5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0099ff;
+    text-shadow: 2px 2px 5px #000000;
+}
+#formularioCancelarCompra{
+    margin: 8.5%;
+    padding: 10px;
+    position: relative;
+    width: 30%;
+    left: 30%;
+}
+#nav{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(175, 9, 9);
+    border-radius: 6px;
+}
+.iconos{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-top: -15px;
+    transition: all 0.5s;
+}

@@ -1,0 +1,54 @@
+/*estilo para el login de la pagina*/
+/* 
+    Este código representa una selección CSS.
+    Se utiliza para seleccionar y peinar elementos específicos en una página web.
+    La selección puede basarse en tipos de elementos, clases, ID u otros atributos.
+    Los estilos aplicados a los elementos seleccionados se definirán en las reglas CSS que siguen esta selección.
+*/
+/* al body le colocamos un margin de 0 y el padding de 0 tambien, para eliminar el margen por defecto de los navegadores y el relleno */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(src/fondo/_2c67022f-b600-4ecc-8593-411a869e747a.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* /* martes 28/11/2023 
+la edicion a cambiado solo para modificaciones secundarias ya que la amyoria se ha hecho con la libreria de bootstrap*/
+
+.container {
+width: 500px;
+margin: 0 auto;
+}
+
+h1{
+    left: 24.1%;
+}
+
+form {
+padding: 20px;
+background-image:  url(src/fondo/_2c67022f-b600-4ecc-8593-411a869e747a.jfif);
+top: 100px;
+left: 24%;
+}
+
+label {
+font-weight: bold;
+}
+
+input,
+select {
+width: 100%;
+padding: 10px;
+color: #fff !important;
+background-color: #c0c0c075 !important;
+border: 1px solid #ccc;
+}
+
+button {
+background-color: #000;
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+}

@@ -1,0 +1,353 @@
+<!-- INFORME DE AVANCE DE PROYECTO  -->
+<!--el proposito es crear una pagina para la ventas de motos, el objetivo es llegar a un tipo especifico de personas a las que les gusta la motos de tipo cross-->
+<!DOCTYPE html>
+<!--fecha de la ultima modificacion: jueves 30/11/2023 -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eslido-pagina-principal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>XTREX</title>
+</head>
+<!-- 
+  Este código HTML representa una página web para una tienda en línea imaginaria llamada XTrex.
+  Incluye un encabezado con un logotipo y un menú de navegación, un carrusel que muestra productos destacados,
+  y una sección con tarjetas que muestran diferentes productos.
+  El pie de página contiene información sobre la empresa y los datos de contacto.
+-->
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script-tienda.js"></script>
+    <header class="d-flex justify-content-end">
+        <h1 class="position-absolute border-end p-3 m-2">XTREX</h1>
+        <!-- 
+          Este código representa la barra de navegación de una página web.
+          Contiene una lista de elementos de navegación con enlaces a diferentes páginas.
+          El primer elemento es un enlace a la página "Login.html", utilizada para el inicio de sesión del usuario.
+          El segundo elemento es un enlace a una página de información de contacto.
+        -->
+        <nav class="nav p-2 m-3" id="nav">
+          <ul class="nav p-1 m-1">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">INICIAR SECION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO-INFO</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container p-5">
+        <!--martes 28/11/2023
+          Este código representa un componente de carrusel que muestra imágenes de diferentes modelos de motocicletas.
+          El carrusel está controlado por botones anteriores y próximos.
+          Cada elemento de carrusel contiene una imagen, un título y una descripción.
+          Las imágenes se obtienen del directorio "SRC/MOTOS".
+          El carrusel está diseñado con clases de arranque.
+        -->
+        <div class="row">
+          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item active">
+                <img src="src/motos/_3f59a93c-7046-4da9-ade4-e5dceb2a7338-carrusel.jpg" class="d-block w-100 ft-mt-crr" alt="moto-xtrex-xxtrex-azul">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MODELO XX</h5>
+                  <p>modelo XX de color azul de la marca imaginaria XTREX</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/motos/_8f8de1cb-09ea-403d-a2c8-8ee45145fec9-carrusel.jpg" class="d-block w-100 ft-mt-crr" alt="moto-xtrex-xtrrx">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MODELO T</h5>
+                  <p>modelo T de color rojo de la marca imaginaria XTREX</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/motos/_fe64257c-7737-4bff-bcd8-0fe9f4245bd8-carrusel.jpg" class="d-block w-100 ft-mt-crr" alt="moto-xtrex-xtrex">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MODELO V</h5>
+                  <p>modelo V de color negro de la marca imaginaria XTREX</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <!--miercoles 29/11/2023
+          Este código representa una sección de una página web que muestra varias tarjetas.
+          Cada tarjeta contiene una imagen, un título y algún texto de apoyo.
+          Las tarjetas están organizadas en una fila utilizando el sistema de cuadrícula de Bootstrap.
+        -->
+        <!-- jueves 30/11/2023 
+        se le a modificado un poco el estilo de las cartas que da pordefecto bootstrap 
+        el cambi qu se le a hecho es que la imagen "foto grafia de la moto" relle todo el cuadro de la carta cuando el mouse de posa encima de la imagen esto solo es por mera estetica, la modificaion a la imagen se le a hecho con css-->
+        <div class="row row align-items-center cartas">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <!-- -OnClick: llama a la función JavaScript "ABRIR_DETALLES_MOTO, la cual manda al usuario a otro html que muestra detalles de la moto a la cual el usuario le dio click -->
+                <div class="col-md-4">
+                  <img src="src/motos/_07e4122b-fde4-4c97-b124-9ccf38a84c25.jfif" class="img-fluid rounded-start" alt="moto_modelo_XTRRX" onclick="abrir_detalles_moto('src/motos/_07e4122b-fde4-4c97-b124-9ccf38a84c25.jfif','XTRRRX','negro','si','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO XTRRX</h6>
+                    <p class="card-text">color: negro</p>
+                    <p class="card-text">espejos: si</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_05dde910-415f-412c-94c9-7dc40f4cd058.jfif" class="img-fluid rounded-start" alt="moto_modelo_XXTRES" onclick="abrir_detalles_moto('src/motos/_05dde910-415f-412c-94c9-7dc40f4cd058.jfif','XXTRES','azul','si','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO XXTRES</h6>
+                    <p class="card-text">color: azul</p>
+                    <p class="card-text">espejos: si</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_0e47a26f-61c5-4415-b5a4-95f755a7fd76.jfif" class="img-fluid rounded-start" alt="moto_modelo_XTREX" onclick="abrir_detalles_moto('src/motos/_0e47a26f-61c5-4415-b5a4-95f755a7fd76.jfif','XTREX','verde','no','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO XTREX</h6>
+                    <p class="card-text">color: verde</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_4a99d43e-66f9-4eab-ae3a-628c25be0857.jfif" class="img-fluid rounded-start" alt="moto_modelo_XNF" onclick="abrir_detalles_moto('src/motos/_4a99d43e-66f9-4eab-ae3a-628c25be0857.jfif','XNF','rojo','si','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO XNF</h6>
+                    <p class="card-text">color: rojo</p>
+                    <p class="card-text">espejos: si</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row row align-items-center cartas">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_17667783-1369-453f-82b5-13504273ff89.jfif" class="img-fluid rounded-start" alt="moto_modelo_XT3" onclick="abrir_detalles_moto('src/motos/_17667783-1369-453f-82b5-13504273ff89.jfif','XT3','rojo','si','no')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO XT3</h6>
+                    <p class="card-text">color: rojo</p>
+                    <p class="card-text">espejos: si</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_213ebd3b-833a-4dc7-b1a9-30ad59d6a2a2.jfif" class="img-fluid rounded-start" alt="moto_modelo_X" onclick="abrir_detalles_moto('src/motos/_213ebd3b-833a-4dc7-b1a9-30ad59d6a2a2.jfif','X','negro','no','no')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO X</h6>
+                    <p class="card-text">color: negro</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_278584b9-6184-441b-ba02-379b01e65d78.jfif" class="img-fluid rounded-start" alt="moto_modelo_RACING" onclick="abrir_detalles_moto('src/motos/_278584b9-6184-441b-ba02-379b01e65d78.jfif','RACING','rojo','no','no')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO RACING</h6>
+                    <p class="card-text">color: rojo</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_f9f67e2b-9303-4bdf-9c64-b857e32fd30e.jfif" class="img-fluid rounded-start" alt="moto_modelo_R" onclick="abrir_detalles_moto('src/motos/_f9f67e2b-9303-4bdf-9c64-b857e32fd30e.jfif','R','blanco','si','si')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO </h6>
+                    <h6 class="card-title m-0">R</h6>
+                    <p class="card-text">color: blanco</p>
+                    <p class="card-text">espejos: si</p>
+                    <p class="card-text">parabrisa: si</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row align-items-center cartas">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_3b68829e-27aa-4ea7-8ac6-ac943af9952e.jfif" class="img-fluid rounded-start" alt="moto_modelo_TT" onclick="abrir_detalles_moto('src/motos/_3b68829e-27aa-4ea7-8ac6-ac943af9952e.jfif','TT','negro','no','no')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO</h6>
+                    <h6 class="card-title m-0">TT</h6>
+                    <p class="card-text">color: negro</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_33ca1ce1-2313-4487-a3a2-a89acd035c40.jfif" class="img-fluid rounded-start" alt="moto_modelo_CYBERPUNK-roja" onclick="abrir_detalles_moto('src/motos/_33ca1ce1-2313-4487-a3a2-a89acd035c40.jfif','CYBERPUNK','rojo','no','no')">
+                  <h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO CYBERPUNK</h6>
+                    <p class="card-text">color: rojo</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 8.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_4dbdba3a-38a5-4b09-a064-f677532a7d4c.jfif" class="img-fluid rounded-start" alt="moto_modelo_XEX" onclick="abrir_detalles_moto('src/motos/_4dbdba3a-38a5-4b09-a064-f677532a7d4c.jfif','XEX','negro','no','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO</h6>
+                    <h6 class="card-title m-0">XEX</h6>
+                    <p class="card-text">color: negro</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="src/motos/_e22801cb-aa22-450b-939d-abefbe8ec9a7.jfif" class="img-fluid rounded-start" alt="moto_modelo_XA" onclick="abrir_detalles_moto('src/motos/_e22801cb-aa22-450b-939d-abefbe8ec9a7.jfif','XA','blanco','no','no')"><h3 class="texo_informacion">haga click para ver la informacion de la moto</h3>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">MODELO</h6>
+                    <h6 class="card-title m-0">XA</h6>
+                    <p class="card-text">color: blanco</p>
+                    <p class="card-text">espejos: no</p>
+                    <p class="card-text">parabrisa: no</p>
+                    <p class="card-text"><small class="text-body-secondary">USD 6.000</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--
+    Esta es la sección de pie de página del sitio web de XTrex.
+    Contiene información sobre la marca, los datos de contacto y los íconos de las redes sociales.
+  -->
+  <footer class="p-0 w-100 fw-bold h-100">
+    <div class="row">
+      <div class="col">
+        <h1 class="m-4">XTREX</h1>
+        <p>&copy; JUAN ESTEBAN ORTIZ GUARY | XTREX | TIENDA Y MARCA FINCTICIA</p>
+      </div>
+      <div class="col m-2">
+        <p class="m-5">TIENDA DE MOTOS DE LA MARCA FINCTICIA-XTREX-</p>
+      </div>
+      <div class="col">
+        <p class="m-5">contatos:</p>
+        <div class="container-fluid d-flex">
+
+
+        <div>
+          <a href="https://web.whatsapp.com/"><img src="src/whatsapp-removebg-preview.png" class="iconos"></a>
+          <a href="https://www.youtube.com/"><img src="src/images-removebg-preview (1).png" class="iconos"></a>
+          <a href="https://www.facebook.com/"><img src="src/4e5d6eb79c88fd031051c1f28b077b32-removebg-preview.png" class="iconos"></a>
+        </div>
+    </div>
+  </footer>
+  </body>
+</html>
